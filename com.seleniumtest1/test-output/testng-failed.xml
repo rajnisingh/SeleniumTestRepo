@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [mysuite]">
+  <test name="myTest(failed)">
+    <classes>
+      <class name="com.rodanandfieldsTestClasses.RodanandFieldsHomePageTest">
+        <methods>
+          <include name="beforeTestMethod"/>
+          <include name="afterMethod"/>
+          <include name="testHomePage"/>
+        </methods>
+      </class> <!-- com.rodanandfieldsTestClasses.RodanandFieldsHomePageTest -->
+    </classes>
+  </test> <!-- myTest(failed) -->
+</suite> <!-- Failed suite [mysuite] -->

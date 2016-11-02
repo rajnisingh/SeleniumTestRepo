@@ -1,0 +1,9 @@
+package com.rodandfields;
+
+import org.openqa.selenium.By;
+
+public class ShopSkinCarePage {
+	public static final By SHOP_SKINCARE=By.xpath("html/body/main/header/div[1]/nav/div/div[1]/ul[2]/li[1]/a");
+	public static final By ALL_PRODUCTS=By.xpath("html/body/main/header/div[1]/nav/div/div[1]/ul[2]/li[1]/ul/li[7]/div/a");
+
+}

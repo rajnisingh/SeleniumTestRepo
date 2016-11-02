@@ -1,0 +1,28 @@
+package com.rodanandfieldsTestClasses;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class RodanandFieldsHomePageTest {
+	WebDriver driver;
+	@BeforeTest
+	public void beforeTestMethod()
+	{
+		driver.get("https://www.rodanandfields.com/ca");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+	}
+	@Test
+	public void homePageTest()
+	{
+		
+	}
+	
+	
+	
+
+}

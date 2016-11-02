@@ -1,0 +1,34 @@
+package com.rodanandfieldsTestClasses;
+import com.rodandfields.RodanandFieldsHomePage;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class RodanandFieldsHomePageTest extends RodanandFieldsHomePage{
+	public RodanandFieldsHomePageTest(WebDriver driver) {
+		super(driver);
+		}
+	WebDriver driver;
+	@BeforeTest
+	public void beforeTestMethod()
+	{
+		driver.get("https://www.rodanandfields.com/ca");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+	}
+	@Test
+	public void testHomePage()
+	{
+		RodanandFieldsHomePage homePage=new RodanandFieldsHomePage(driver);
+		homePage.mousehover(BECOME_A_CONSULTANT);
+		homePage.clickOnElement(ENROLL_NOW);
+		homePage.editInTextBox(CONSULTANT_NAME, "Mary");
+		homePage.clickOnElement(SEARCH_BUTTON);
+	}
+	
+	
+	
+
+}
